@@ -24,10 +24,13 @@
                                                 <a href="#about" data-toggle="tab">Paso 2</a>
                                             </li>
                                             <li>
-                                                <a href="#terminosCondiciones" data-toggle="tab">Paso 3</a>
+                                                <a href="#consulta" data-toggle="tab">Paso 3</a>
                                             </li>
                                             <li>
-                                                <a href="#comprobantes" data-toggle="tab">Paso 4</a>
+                                                <a href="#terminosCondiciones" data-toggle="tab">Paso 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#comprobantes" data-toggle="tab">Paso 5</a>
                                             </li>
                                             {{!-- <li>
                                                 <a href="#cita" data-toggle="tab">Paso 5</a>
@@ -140,6 +143,82 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {{!-- <div class="col-lg-10 col-lg-offset-1">
+                                                    <hr>
+                                                    <h4 class="info-text"> ¿Cuáles son tus especialidades? </h4>
+                                                    <div class="row">
+                                                        <label class="col-sm-2 label-on-left">Selecciona: </label>
+                                                        <div class="col-sm-10 checkbox-radios">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Médico General
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Pediatría
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Odontología
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Dermatología
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Oftalmología
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> --}}
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="consulta">
+                                            <div class="row">
+                                                <h4 class="info-text"> Ingresa los datoss solicitados.</h4>                                                
+                                                <div class="col-sm-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">gesture</i>
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label"> Especialidad
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{!-- <select class="selectpicker" data-style="btn btn-primary btn-round" title="Single Select" data-size="7">
+                                                                <option disabled selected>Selecciona: </option>
+                                                                <option value="2">Cardiología</option>
+                                                                <option value="3">Urología</option>
+                                                                <option value="4">Grastroenterología</option>
+                                                                <option value="5">Traumatología</option>
+                                                                <option value="6">Otorrinolaringología</option>
+                                                                <option value="7">Odontología</option>
+                                                                <option value="8">Oftalmología</option>
+                                                                <option value="9">Dermatología</option>
+                                                            </select> --}}
+                                                            {{input name="esp" type="text" class="form-control" value=especialidad}}
+                                                        </div>                            
+                                                    </div>                                                    
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">attach_money</i>
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Costo de consulta
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{input name="costo" type="number" class="form-control" value=costo}}
+                                                        </div>
+                                                    </div>
+                                                    <br>                                                    
+                                                </div>
+                                                <br>
                                                 {{!-- <div class="col-lg-10 col-lg-offset-1">
                                                     <hr>
                                                     <h4 class="info-text"> ¿Cuáles son tus especialidades? </h4>

@@ -18,8 +18,9 @@ export default Controller.extend({
             let nombre = this.get('nombre');
             let apellidos = this.get('apellidos');
             let telefono = this.get('telefono');
-
+            let costo = this.get('costo');
             let modo = this.get('modo')
+            let especialidad = this.get('especialidad');
             console.log(modo);
       
             if(true){//password == confirmation){
@@ -35,6 +36,8 @@ export default Controller.extend({
                     telefono: telefono,
                     email: email,
                     password:password,
+                    costo: costo,
+                    especialidad: especialidad,
                     id: response.uid
                   }).save().then(()=>{
                     console.log(email);
