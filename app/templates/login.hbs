@@ -1,0 +1,68 @@
+
+    <!--  Material Dashboard CSS    -->
+    <link href="{{rootURL}}assets/css/material-dashboard.css?v=1.2.1" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{{rootURL}}assets/css/demo.css" rel="stylesheet" />
+    <div class="row"  style="margin-right:0px; margin-left:0px">
+        <div class="col-md-6">
+            <img style="width: 97%" src="{{rootURL}}assets/img/reconocimiento-medico-01.jpg">
+        </div>
+        <div class="col-md-6">
+                        <div class="row">
+                            <br><br><br><br><br><br><br>
+                            <div class="col-md-6 col-md-offset-3">
+                                <form method="#" action="#">
+                                    <div class="card card-hidden">
+                                        <div class="card-header text-center" data-background-color="rose">
+                                            <h4 class="card-title">Inicia sesión</h4>
+                                        </div>
+                                        <p class="category text-center">
+                                            
+                                        </p>
+                                        <div class="card-content">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fas fa-user-md"></i>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Correo/Teléfono</label>
+                                                    {{input type="text" class="form-control" value=email}}
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="material-icons">lock_outline</i>
+                                                </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Contraseña</label>
+                                                    {{input type="password" class="form-control" value=password}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer text-center">
+                                            <button type="submit" {{action 'signIn' 'email'}} class="btn btn-rose btn-simple btn-wd btn-lg">Ingresa</button>
+                                        </div>
+                                    </div>
+
+                                    <center>
+                                        {{#link-to 'registroD'}}
+                                            ¿No tienes una cuenta? ¡Únete a URDoc!
+                                        {{/link-to}}
+                                    </center>
+
+                                    {{#if errorMsg}}
+                                        <div class="row">
+                                        <div class="ui negative message">
+                                            <!-- <i class="close icon"></i> -->
+                                            <div class="header">
+                                            Error :c
+                                            </div>
+                                            <p>{{errorMsg}}</p>
+                                        </div>
+                                        </div>
+                                    {{/if}}
+                                </form>
+                            </div>
+                        </div>
+        </div>
+    </div>

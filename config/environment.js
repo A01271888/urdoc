@@ -7,6 +7,11 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    torii: {
+      sessionServiceName: 'session' // Como se llama el servicio de Torii
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -30,6 +35,16 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.firebase = {
+      apiKey: "AIzaSyChZYYp6Tk2fOzb3-89V0tbw0Mk3LgMO5I",
+      authDomain: "comunidadember.firebaseapp.com",
+      databaseURL: "https://comunidadember.firebaseio.com",
+      projectId: "comunidadember",
+      storageBucket: "comunidadember.appspot.com",
+      messagingSenderId: "882362785808"
+    }
+
   }
 
   if (environment === 'test') {

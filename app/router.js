@@ -7,6 +7,16 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('login', {path: '/'});
+  this.route('about');
+  this.route('registroD');
+  this.route('perfilD');
+  this.route('blog');
+  this.route('condiciones');
+  this.route('empleos');
+  this.route('politicas');
+  this.route('anunciarse');
+  this.route('ayuda');
 });
 
 export default Router;

@@ -1,0 +1,135 @@
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+<link rel="stylesheet" href="{{rootURL}}assets/css/material-kit.css?v=2.0.0">
+
+<nav class="navbar navbar-default navbar-expand-lg" role="navigation-demo" style="text-decoration-color: black;">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-translate">
+                {{#link-to 'about' class="navbar-brand"}} URDoc {{/link-to}}
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="material-icons">translate</i> Idioma
+                        </a>
+                        <div class="dropdown-menu dropdown-with-icons">
+                            <a href="#Esp" class="dropdown-item">
+                                Español
+                            </a>
+                            <a href="#Ing" class="dropdown-item">
+                                Inglés
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        {{#link-to 'login' class="btn  btn-rose   btn-round btn-block"}}
+                            <i class="material-icons">account_circle</i> Inicia Sesión
+                        {{/link-to}}
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-->
+    </nav>
+
+    <div class="container">
+        <div class="about-services features-2">
+            <div class="row">
+                <div class="col-md-7 ml-auto mr-auto ">
+                    <div class="description">
+                        <h2 class="info-title">Anúnciate en URDoc</h2>
+                        <p>
+                            Soluciones para ayudarte a lograr tus metas profesionales. 
+                        </p>
+                        <button class="btn btn-rose btn-lg">Comenzar</button>
+                        <p>¿No tienes cuenta de URDoc? {{#link-to 'registroD'}}Registrate{{/link-to}}</p>
+                    </div>
+                </div>
+                <div class="col-md-5 ml-auto mr-auto text-center">
+                    <img src="{{rootURL}}assets/img/doc.jpeg" alt="Rounded Image" class="rounded img-fluid">
+                    <img src="">
+                </div>
+            </div> 
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info info-horizontal">
+                        <div class="description">
+                            <h4 class="info-title">Llegue a los clientes potenciales</h4>
+                            <p>Morbi turpis lorem, auctor ut justo eu, aliquam faucibus orci. Suspendisse ornare mollis mauris ac malesuada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info info-horizontal">
+                        <div class="description">
+                            <h4 class="info-title">Gane más pacientes</h4>
+                            <p>Morbi turpis lorem, auctor ut justo eu, aliquam faucibus orci. Suspendisse ornare mollis mauris ac malesuada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info info-horizontal">
+                        <div class="description">
+                            <h4 class="info-title">Mida los resultados en tiempo real</h4>
+                            <p>Morbi turpis lorem, auctor ut justo eu, aliquam faucibus orci. Suspendisse ornare mollis mauris ac malesuada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h1 class="title">¿Cómo funciona?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <div class="description">
+                    <h4 class="info-title">Elige tu audiencia objetivo</h4>
+                    <p> Curabitur gravida enim sit amet sapien pretium, ac auctor libero sollicitudin. Praesent aliquet mollis quam a facilisis. Morbi luctus, nunc sed congue vulputate, eros mi posuere tortor, et pulvinar tortor justo non metus. Cras ut blandit odio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <div class="description">
+                    <h4 class="info-title">Amplifica el mensaje y se descubierto</h4>
+                    <p> Curabitur gravida enim sit amet sapien pretium, ac auctor libero sollicitudin. Praesent aliquet mollis quam a facilisis. Morbi luctus, nunc sed congue vulputate, eros mi posuere tortor, et pulvinar tortor justo non metus. Cras ut blandit odio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <div class="description">
+                    <h4 class="info-title">Establece un presupuesto y paga por lo que funciona</h4>
+                    <p>M Curabitur gravida enim sit amet sapien pretium, ac auctor libero sollicitudin. Praesent aliquet mollis quam a facilisis. Morbi luctus, nunc sed congue vulputate, eros mi posuere tortor, et pulvinar tortor justo non metus. Cras ut blandit odio.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <center><div class="description">
+                    <p>
+                        Obtenga más información sobre URDoc Ads y de nuestras políticas de anuncios en nuestro <a href="Ayuda.html">centro de ayuda →</a>
+                    </p>
+                </div>
+                <button class="btn btn-rose btn-lg">Comenzar</button></center>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+    </div>

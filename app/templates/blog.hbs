@@ -1,0 +1,333 @@
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+<link rel="stylesheet" href="{{rootURL}}assets/css/material-kit.css?v=2.0.0">
+<!-- Documentation extras -->
+<!-- CSS Just for demo purpose, don't include it in your project -->
+<link href="{{rootURL}}assets/assets-for-demo/demo.css" rel="stylesheet" />
+
+<nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                {{#link-to 'about' class="navbar-brand"}}
+                    URDoc
+                {{/link-to}}
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="material-icons">translate</i> Idioma
+                        </a>
+                        <div class="dropdown-menu dropdown-with-icons">
+                            <a href="#Esp" class="dropdown-item">
+                                Español
+                            </a>
+                            <a href="#Ing" class="dropdown-item">
+                                Inglés
+                            </a>
+                        </div>
+                    </li>
+                    <li class="button-container nav-item">
+                        {{#link-to 'login' class="btn  btn-rose   btn-round btn-block"}}
+                            <i class="material-icons">account_circle</i> Inicia Sesión
+                        {{/link-to}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&apos;{{rootURL}}assets/img/insumos-medicos-1.jpg&apos;);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h2 class="title">Un lugar para que médicos y pacientes compartan y descubran nuevas historias</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main main-raised">
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <ul class="nav nav-pills nav-pills-primary">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#pill1" data-toggle="tab">Todo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pill2" data-toggle="tab">Medicina</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pill3" data-toggle="tab">Pediatria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pill3" data-toggle="tab">Farmaceutica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pill3" data-toggle="tab">Experiencias</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active" id="pill1"></div>
+                            <div class="tab-pane" id="pill2"></div>
+                            <div class="tab-pane" id="pill3"></div>
+                            <div class="tab-pane" id="pill4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-raised card-background" style="background-image: url('{{rootURL}}assets/img/pediatra.jpg')">
+                            <div class="card-body">
+                                <h6 class="card-category text-info">Pediatria</h6>
+                                <a href="#pablo">
+                                    <h3 class="card-title">Dermatitis seborreica</h3>
+                                </a>
+                                <p class="card-description">
+                                    En el post de esta semana, vamos a abodar un tema relativamnete frecuente en los lactantes de menor edad (menores de 1 año). Muchas veces los padres acuden al pediatra para consultar sobre una erupción cutánea que ha aparecido en sus bebés...
+                                </p>
+                                <a href="#pablo" class="btn btn-danger btn-round">
+                                    <i class="material-icons">format_align_left</i> Leer artículo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-raised card-background" style="background-image: url('{{rootURL}}assets/img/La-industria-farmaceutica-secretos-y-mentiras-1.jpg')">
+                            <div class="card-body">
+                                <h6 class="card-category text-info">Farmaceutica</h6>
+                                <h3 class="card-title">Posicionamiento “experto” de la farmacia a través de la comunicación visual</h3>
+                                <p class="card-description">
+                                    Los pacientes/clientes, cada vez más formados e informados, buscan un consejo experto en la farmacia para la solución de sus problemas o necesidades concretas....
+                                </p>
+                                <a href="#pablo" class="btn btn-primary btn-round">
+                                    <i class="material-icons">format_align_left</i> Leer artículo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card card-raised card-background" style="background-image: url('{{rootURL}}assets/img/medicina.jpg')">
+                            <div class="card-body">
+                                <h6 class="card-category text-info">Medicina</h6>
+                                <h3 class="card-title">¿Qué es el drenaje linfático manual (DLM)?</h3>
+                                <p class="card-description">
+                                    EL DLM es una técnica terapéutica que en cirugía plástica permite reequilibrar los líquidos corporales para mejorar diferentes situaciones: traumatismos, procesos inflamatorios, principalmente edemas...
+                                </p>
+                                <a href="#pablo" class="btn btn-warning btn-round">
+                                    <i class="material-icons">subject</i> Read Case Study
+                                </a>
+                                <a href="#pablo" class="btn btn-white btn-just-icon btn-link" title="" rel="tooltip" data-original-title="Save to Pocket">
+                                    <i class="fa fa-get-pocket"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="title text-center">Quizás tambien te interese</h3>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-plain card-blog">
+                            <div class="card-header card-header-image">
+                                <a href="#pablo">
+                                    <img class="img img-raised" src="{{rootURL}}assets/img/1487247616_475504_1487335278_noticia_fotograma.jpg">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-category text-info">Farmaceutica</h6>
+                                <h4 class="card-title">
+                                    <a href="#pablo">Buenas intenciones fiscales, en la Farmacia</a>
+                                </h4>
+                                <p class="card-description">
+                                   “De sanas intenciones…está el infierno lleno”. Así comienza un proverbio bastante utilizado en nuestro idioma universal...
+                                    <a href="#pablo"> Leer más </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-plain card-blog">
+                            <div class="card-header card-header-image">
+                                <a href="#pablo">
+                                    <img class="img img-raised" src="{{rootURL}}assets/img/mocos-en-la-cabeza.jpg">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-category text-success">
+                                    Pediatría
+                                </h6>
+                                <h4 class="card-title">
+                                    <a href="#pablo">Sinusitis</a>
+                                </h4>
+                                <p class="card-description">
+                                    En el post de hpy vamos a abordar un tema que, aunque no es muy frecuente en niños (se diagnostica mucho más en eadultos), no deja de tener importancia y los pediatras debemos tenerlo siempre presente.
+                                    <a href="#pablo"> Leer más </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-plain card-blog">
+                            <div class="card-header card-header-image">
+                                <a href="#pablo">
+                                    <img class="img img-raised" src="{{rootURL}}assets/img/telómeros-al-envejecimiento-port.jpg">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-category text-danger">
+                                    <i class="material-icons">trending_up</i> Medicina
+                                </h6>
+                                <h4 class="card-title">
+                                    <a href="#pablo">Signos y causas del envejicimiento facial</a>
+                                </h4>
+                                <p class="card-description">
+                                    El entendimiento del envejecimiento facial ha cambiado de estar centrado en la gravedad a estar centrado en el volumen. 
+                                    <a href="#pablo"> Leer más </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-5 section-image" style="background-image: url(&apos;{{rootURL}}assets/img/bg10.jpg&apos;)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="card-header card-header-image">
+                                        <a href="#">
+                                            <img class="img" src="{{rootURL}}assets/img/luis.jpg">
+                                        </a>
+                                        <div class="ripple-container"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Luis Arturo Pérez</h4>
+                                        <h6 class="category text-muted">CEO / Co-Founder</h6>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://www.instagram.com/larturo_p/" target="_blank" class="btn btn-just-icon btn-link btn-instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="https://twitter.com/_Wiwichus_" target="_blank" class="btn btn-just-icon btn-link btn-twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/luisarturo.perez.39" target="_blank" class="btn btn-just-icon btn-link btn-facebook">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="card-header card-header-image">
+                                        <a href="#pablo">
+                                            <img class="img" src="{{rootURL}}assets/img/abraham.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Abraham Jiménez</h4>
+                                        <h6 class="card-category text-muted">Author of the Week</h6>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://www.instagram.com/chaco_abraham/" target="_blank" class="btn btn-just-icon btn-link btn-instagram"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://twitter.com/chaco_abrenarti" target="_blank" class="btn btn-just-icon btn-link btn-twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/favorite.goku.son" target="_blank" class="btn btn-just-icon btn-link btn-facebook">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="card-header card-header-image">
+                                        <a href="#pablo">
+                                            <img class="img" src="{{rootURL}}assets/img/karo.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Karolina Barrera</h4>
+                                        <h6 class="card-category text-muted">Author of the Week</h6>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://www.instagram.com/_kbarod/" target="_blank" class="btn btn-just-icon btn-link btn-instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                        <a href="https://twitter.com/_KBarood" target="_blank" class="btn btn-just-icon btn-link btn-twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/KarolinaBarood" target="_blank" class="btn btn-just-icon btn-link btn-facebook">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="title">¡Obtén &amp; consejos y notas cada semana!</h3>
+                        <p class="description">
+                            ¡Únete a nuestro boletín y recibe noticias en tu bandeja de entrada cada semana! También odiamos el spam, así que no te preocupes por esto.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-plain card-form-horizontal">
+                            <div class="card-body">
+                                <form method="" action="">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="material-icons">mail</i>
+                                                </span>
+                                                <div class="form-group label-floating has-default bmd-form-group">
+                                                    <input type="text" class="form-control" placeholder="Tu correo electrónico...">
+                                                    <span class="material-input"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="button" class="btn btn-primary btn-round btn-block">Subscrite</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

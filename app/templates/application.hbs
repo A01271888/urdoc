@@ -1,5 +1,79 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+ <!--  Material Dashboard CSS    -->
+    <link href="{{rootURL}}assets/css/material-dashboard.css?v=1.2.1" rel="stylesheet" />
+
+<div>
+    {{outlet}}
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <nav class="pull-left">
+            <ul>
+                <li>
+                    {{#link-to 'about'}}
+                        Sobre nosotros
+                    {{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'ayuda'}}
+                        Centro de Ayuda
+                    {{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'blog'}}
+                        Blog
+                    {{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'empleos'}}
+                            Empleos
+                    {{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'condiciones'}}
+                        Condiciones
+                    {{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'politicas'}}
+                        Políticas de Privacidad
+                    {{/link-to}}
+                </li>
+                <li>
+                    {{#link-to 'anunciarse'}}
+                        Anunciarse
+                    {{/link-to}}
+                </li>
+            </ul>
+        </nav>
+        <p class="copyright pull-right">
+                &copy; 
+                {{!-- <script>
+                    document.write(new Date().getFullYear())
+                </script> --}}
+                2018
+                <a href="http://www.URDoc.com"> URDoc </a>
+        </p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        demo.initMaterialWizard();
+        setTimeout(function() {
+            $('.card.wizard-card').addClass('active');
+        }, 600);
+    });
+</script>
+
+<script type="text/javascript">
+    $().ready(function() {
+        demo.checkFullPageBackgroundImage();
+
+        setTimeout(function() {
+            // after 1000 ms we add the class animated to the login/register card
+            $('.card').removeClass('card-hidden');
+        }, 700)
+    });
+</script>

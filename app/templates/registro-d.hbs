@@ -1,0 +1,362 @@
+ <!--  Material Dashboard CSS    -->
+    <link href="{{rootURL}}assets/css/material-dashboard.css?v=1.2.1" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{{rootURL}}assets/css/demo.css" rel="stylesheet" />
+<div class="wrapper">
+    <div class="main-panel">
+        <div class="col-sm-8 col-sm-offset-1">
+            <div class="wizard-container" >
+                <div class="card wizard-card" data-color="rose" id="wizardProfile">
+                    <form action="" method="">
+                                    <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+                                    <div class="wizard-header">
+                                        <h3 class="wizard-title">
+                                            Genera tu perfil
+                                        </h3>
+                                        <h5>Ingresa los datos que se te solicitan.</h5>
+                                    </div>
+                                    <div class="wizard-navigation">
+                                        <ul>
+                                            <li>
+                                                <a href="#tipoAsociacion" data-toggle="tab">Paso 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#about" data-toggle="tab">Paso 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#terminosCondiciones" data-toggle="tab">Paso 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#comprobantes" data-toggle="tab">Paso 4</a>
+                                            </li>
+                                            {{!-- <li>
+                                                <a href="#cita" data-toggle="tab">Paso 5</a>
+                                            </li> --}}
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="tipoAsociacion">
+                                            <h4 class="info-text">¿Cómo te gustaría asociarte a la plataforma?</h4>
+                                            <div class="row">
+                                                <div class="col-lg-10 col-lg-offset-1">
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-radio">
+                                                            {{input type="radio" name="modo" value="privado"}}
+                                                            <div class="icon">
+                                                                <i class="fas fa-user-md"></i>
+                                                            </div>
+                                                            <h6>Consultorio Privado</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-radio">
+                                                            {{input type="radio" name="modo" value="clinica"}}
+                                                            <div class="icon">
+                                                                <i class="far fa-hospital"></i>
+                                                                <!-- i class="far fa-hospital"></i-->
+                                                            </div>
+                                                            <h6>Institución Médica</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-radio">
+                                                            {{input type="radio" name="modo" value="domicilio"}}
+                                                            <div class="icon">
+                                                                <i class="fas fa-ambulance"></i>
+                                                            </div>
+                                                            <h6>Médico a domicilio</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="tab-pane" id="about">
+                                            <div class="row">
+                                                <h4 class="info-text"> Ingresa tus datos personales.</h4>
+                                                <div class="col-sm-4 col-sm-offset-1">
+                                                    <div class="picture-container">
+                                                        <div class="picture">
+                                                            <img src="../../assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title="" />
+                                                            <input type="file" id="wizard-picture">
+                                                        </div>
+                                                        <h6>Elige una foto de perfil.</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">face</i>
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Nombre(s)
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{input name="nombre" type="text" class="form-control" value=nombre}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">record_voice_over</i>
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Apellidos
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{input name="apellidos" type="text" class="form-control" value=apellidos}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">settings_phone</i>
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Teléfono
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{input name="telefono" type="phone" class="form-control" value=telefono}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">email</i>
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Email
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{input name="email" type="email" class="form-control" value=email}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="material-icons">vpn_key</i>
+                                                            {{!-- <i class="fas fa-key"></i> --}}
+                                                        </span>
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Contraseña
+                                                                <small>(required)</small>
+                                                            </label>
+                                                            {{input name="pass" type="password" class="form-control" value=password}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {{!-- <div class="col-lg-10 col-lg-offset-1">
+                                                    <hr>
+                                                    <h4 class="info-text"> ¿Cuáles son tus especialidades? </h4>
+                                                    <div class="row">
+                                                        <label class="col-sm-2 label-on-left">Selecciona: </label>
+                                                        <div class="col-sm-10 checkbox-radios">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Médico General
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Pediatría
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Odontología
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Dermatología
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes"> Oftalmología
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> --}}
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane"  id="terminosCondiciones" >
+                                            <h4 class="info-text">Terminos y condiciones</h4>
+                                            <div class="panel-body">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+                                            </div>
+                                            <center><div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="optionsCheckboxes"> Acepto los terminos y condiciones. 
+                                                </label>
+                                            </div></center>
+                                        </div>
+                                        <div class="tab-pane" id="comprobantes">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h4 class="info-text"> Ingresa tus comprobantes. </h4>
+                                                </div>
+                                                <div class="col-md-12">
+                                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading" role="tab" id="headingOne">
+                                                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                            <h4 class="panel-title">
+                                                                                Documentos Profesionales
+                                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                                            </h4>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                                        <div class="panel-body">
+                                                                            <center><div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <legend> Sube una copia de tu titulo profesional o cédula </legend>
+                                                                                    <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                                                        <div>
+                                                                                            <span class="btn btn-rose btn-round btn-file">
+                                                                                                <span class="fileinput-new">Seleccionar archivo</span>
+                                                                                                <span class="fileinput-exists">Cambiar</span>
+                                                                                                <input type="file" name="..." />
+                                                                                            </span>
+                                                                                            <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <legend> Comprobante domicilio (consultorio) </legend>
+                                                                                    <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                                                        <div>
+                                                                                            <span class="btn btn-rose btn-round btn-file">
+                                                                                                <span class="fileinput-new">Seleccionar archivo</span>
+                                                                                                <span class="fileinput-exists">Cambiar</span>
+                                                                                                <input type="file" name="..." />
+                                                                                            </span>
+                                                                                            <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div></center>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                            <h4 class="panel-title">
+                                                                                Documentos personales
+                                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                                            </h4>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                        <div class="panel-body">
+                                                                            <center><div class="row"> 
+                                                                                <div class="col-md-6">
+                                                                                    <legend> Identificación Oficial con CURP visible (IFE, INE, Pasaporte)</legend>
+                                                                                    <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                                                        <div>
+                                                                                            <span class="btn btn-rose btn-round btn-file">
+                                                                                                <span class="fileinput-new">Seleccionar archivo</span>
+                                                                                                <span class="fileinput-exists">Cambiar</span>
+                                                                                                <input type="file" name="..." />
+                                                                                            </span>
+                                                                                            <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <legend> Certificado de No Antecedentes Penales </legend>
+                                                                                    <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                                                        <div>
+                                                                                            <span class="btn btn-rose btn-round btn-file">
+                                                                                                <span class="fileinput-new">Seleccionar archivo</span>
+                                                                                                <span class="fileinput-exists">Cambiar</span>
+                                                                                                <input type="file" name="..." />
+                                                                                            </span>
+                                                                                            <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div></center>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading" role="tab" id="headingThree">
+                                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                            <h4 class="panel-title">
+                                                                                Referencias Personales
+                                                                                <i class="material-icons">keyboard_arrow_down</i>
+                                                                            </h4>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                                        <div class="panel-body">
+                                                                            <div class="col-md-4 col-sm-4 col-sm-offset-4">
+                                                                                <legend> </legend>
+                                                                                <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                                                                    <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                                                                    <div>
+                                                                                        <span class="btn btn-rose btn-round btn-file">
+                                                                                            <span class="fileinput-new">Seleccionar archivo</span>
+                                                                                            <span class="fileinput-exists">Cambiar</span>
+                                                                                            <input type="file" name="..." />
+                                                                                        </span>
+                                                                                        <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Eliminar</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                        {{!-- <div class="tab-pane" id="cita"> --}}
+                                            {{!-- <div class="row">
+                                                <div class="card">
+                                                    <div class="card-header card-header-icon" data-background-color="rose">
+                                                        <i class="material-icons">location_on</i>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <h4 class="card-title">Elije una de nuestros centros de verificación para generar un cita y poder seguir con el proceso.</h4>
+                                                        <div id="regularMap" class="map"></div>
+                                                    </div>
+                                                </div>
+                                            </div> --}}
+                                        {{!-- </div> --}}
+                                        <div class="wizard-footer">
+                                            <div class="pull-right">
+                                                <input type='button' class='btn btn-next btn-fill btn-rose btn-wd' name='next' value='Siguiente' />
+                                                <input type='button' class='btn btn-finish btn-fill btn-rose btn-wd' name='finish' value='Enviar' {{action 'signup'}} />
+                                            </div>
+                                            <div class="pull-left">
+                                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' />
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div> 
+                                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        demo.initSmallGoogleMaps();
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        demo.initMaterialWizard();
+        setTimeout(function() {
+            $('.card.wizard-card').addClass('active');
+        }, 600);
+    });
+</script>
